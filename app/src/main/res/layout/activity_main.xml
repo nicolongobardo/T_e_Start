@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nico.fragmentdemo.MainActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    android:background="@drawable/sfondo"
+    >
+
+
+    <FrameLayout
+        app:layout_widthPercent="85%"
+        app:layout_heightPercent="80%"
+        android:background="@drawable/layout_rounded_corners"
+        android:id="@+id/fragment_container">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/img3" />
+    </FrameLayout>
+
+
+</android.support.percent.PercentRelativeLayout>
